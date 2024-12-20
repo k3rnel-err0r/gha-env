@@ -14,8 +14,8 @@ jobs:
     # Environment variables available to this job
     env:
       MONGODB_CLUSTER_ADDRESS: nasacluster.wifdp.mongodb.net
-      MONGODB_USERNAME: nasa-api
-      MONGODB_PASSWORD: 9stnJimDdyWTeWN7
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
